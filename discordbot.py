@@ -24,6 +24,10 @@ async def on_message(message):
 
     if message.content.startswith(f'{PREFIX}hello'):
         await message.channel.send('Hello!')
+        
+@tree.command(name = '안녕', description='해당 봇에 대한 설명을 해줘요.') 
+async def slash2(interaction: discord.Interaction):
+    await interaction.response.send_message(f"안녕하세요!", ephemeral = True) 
 
 
 try:
