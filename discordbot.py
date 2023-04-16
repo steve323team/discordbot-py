@@ -1,5 +1,7 @@
 import discord
 
+TOKEN = os.environ['TOKEN']
+
 client = discord.Client()
 
 @client.event
