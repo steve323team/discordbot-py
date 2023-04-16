@@ -15,7 +15,7 @@ async def on_message(message):
        if message.channel.is_private and message.author.id != "1082274007648317452":
         await client.send_message(discord.utils.get(client.get_all_members(), id="1063636047436730378"), message.author.name + "(" + message.author.id + ") : " + message.content)
     
-        if message.channel.is_private and message.author.id != "1082274007648317452":
+       if message.channel.is_private and message.author.id != "1082274007648317452":
         await client.send_message(client.get_channel("1097156613544091729"), message.author.name + "(" + message/author.id + ") : " + message.content)
         
        if message.content.startswith("!DM"):
