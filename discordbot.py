@@ -1,4 +1,9 @@
+from cmath import log
+from distutils.sysconfig import PREFIX
 import discord
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 TOKEN = os.environ['TOKEN']
 
